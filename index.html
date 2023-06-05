@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Encriptador de texto</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <img class="logoAlura" src="./img/Logo.png" alt="Logo ALura" />
+      </div>
+    </header>
+
+    <main>
+      <section class="main">
+        <section class="ingresoMensaje">
+          <textarea
+            class="ingresoTexto"
+            id="ingresoTexto"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Ingrese el texto aquí"
+          ></textarea>
+
+          <div class="terminos">
+            <img src="./img/alerta.svg" alt="Signo de alerta" />
+            <span class="txtInfo">Solo letras minúscula y sin acentos</span>
+
+            <div class="botones">
+              <button class="btn-encriptar" id="btnEncriptar">Encriptar</button>
+              <button class="btn-desencriptar" id="btnDesencriptar">
+                Desencriptar
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="textoEncriptado" id="textoEncriptado">
+          <img
+            class="muneco"
+            id="Muneco"
+            src="./img/Muñeco.png"
+            alt="Logo Muñeco"
+          />
+          <textarea
+            class="tituloMensaje"
+            id="tituloMensaje"
+            placeholder="Ningún mensaje fue encontrado"
+          ></textarea>
+          <p class="mensajeInformacion" id="mensajeInformacion">
+            Ingrese el texto que desea encriptar o Desencriptar
+          </p>
+
+          <button class="btnCopiar oculto" id="btnCopiar">Copiar</button>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <p>Hecho por: Sofia C.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
